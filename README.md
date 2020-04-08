@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+# myblogvue
 
-You can use the [editor on GitHub](https://github.com/xueyuheng/xiangmu/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+用于技术分享和总结的个人博客，兼容pc和移动端，用户可通过邮箱注册，邮箱验证通过后，可以登录博客，实现收藏点赞以及留言评论回复等功能，还可以展示个人链接，未登录状态可以以游客方式留言
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+使用 vue.js 框架和Element UI来实现前端组件及数据交互，使用 webpack 构建，另外使用shCore.js实现代码样式
 
-### Markdown
+> A Vue.js project
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Build Setup
 
-```markdown
-Syntax highlighted code block
+``` bash
+# install dependencies
+npm install
 
-# Header 1
-## Header 2
-### Header 3
+# serve with hot reload at localhost:8080
+npm run dev
 
-- Bulleted
-- List
+# build for production with minification
+npm run build
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xueyuheng/xiangmu/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
