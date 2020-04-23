@@ -1,6 +1,6 @@
 <!-- 底部公用 -->
 <template>
-    <!-- Aimee的 -->
+    <!--  -->
     <div v-if="this.$store.state.themeObj.user_start!=0" class="footBack footBackQian">
         <div class="footer-img" :style="{background:this.$store.state.themeObj.bottom_img?'url('+this.$store.state.themeObj.bottom_img+') no-repeat 50%':'url(static/img/footer01.png) no-repeat 50%'}">
         </div>
@@ -9,37 +9,15 @@
                 博客已萌萌哒运行<span v-html='longTime'>{{longTime}}</span><span class="timeJump">(●'◡'●)ﾉ♥</span>
             </p>
             <p>
-                托管于 <a href="https://github.com/Aimee1608/myblogvue" target="_blank">GitHub</a>. <a href="https://www.aliyun.com/?spm=a2c49.11131515.0.0.5Z9AkR" target="_blank">阿里云</a> 提供静态文件云存储服务. <a href="https://tongji.baidu.com/web/welcome/login" target="_blank">百度统计</a> 提供网站统计服务. <a href="https://www.cloudxns.net/Order/index.html" target="_blank">CloudXNS</a> 提供 DNS 解析服务.
+                <a href="https://tongji.baidu.com/web/welcome/login" target="_blank">百度统计</a> 提供网站统计服务. 
             </p>
+            
             <p>
-                © 2018 <a href="#">Mango Ya</a>. 由 <a href="https://cn.vuejs.org/" target="_blank">Vue</a> 强力驱动. Theme By <a href="https://diygod.me/" target="_blank">diygod.me</a>. 京ICP备17071595号-1.
-            </p>
-            <p>
-                <span>Made with</span> <img class="fheart" src="static/img/heart02.png"/>  <span>by Aimee.</span>
+                <span>Made with</span> <img class="fheart" src="static/img/heart02.png"/>  <span>by Yuheng.</span>
             </p>
         </div>
     </div>
-    <!-- Qinlh的 -->
-    <div v-else class="footBack footBackHui">
-        <div class="footer-img" >
-            <img :src="this.$store.state.themeObj.bottom_img?this.$store.state.themeObj.bottom_img:'static/img/footer01.png'" alt="">
-        </div>
-        <div class="fcontainer">
-            <p>
-                博客已萌萌哒运行<span v-html='longTime'>{{longTime}}</span><span class="timeJump">(●'◡'●)ﾉ♥</span>
-            </p>
-            <p>
-                托管于 <a href="https://gitee.com/qinlh/" target="_blank">GitHub</a>. <a href="https://www.aliyun.com/?spm=a2c49.11131515.0.0.5Z9AkR" target="_blank">阿里云</a> 提供静态文件云存储服务. <a href="https://tongji.baidu.com/web/welcome/login" target="_blank">百度统计</a> 提供网站统计服务. <a href="https://www.cloudxns.net/Order/index.html" target="_blank">CloudXNS</a> 提供 DNS 解析服务.
-            </p>
-            <p>
-                © 2018 <a href="#">QinlhBlog</a>. 由 <a href="https://cn.vuejs.org/" target="_blank">Vue</a> 强力驱动. Theme By <a href="https://diygod.me/" target="_blank">diygod.me</a>. 京ICP备17071595号-1.
-            </p>
-            <p>
-                <span>Made with</span> <img class="fheart" src="static/img/heart02.png"/>  <span>by Qinlh.</span>
-            </p>
-        </div>
-    </div>
-
+    
 </template>
 
 <script>
@@ -53,7 +31,7 @@
         methods: { //事件处理器
             runTime:function(){//运行倒计时
                 var that = this;
-                var oldTime =new Date('2016/06/01 00:00:00');
+                var oldTime =new Date('2019/04/22 00:00:00');
                 var timer = setInterval(function(){
                     var nowTime = new Date();
                     var longTime = nowTime - oldTime;

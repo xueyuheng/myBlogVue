@@ -399,7 +399,7 @@ const Typeit = (isAimee,emId) =>{
             speech：所有的speech。
          ***/
          if(isAimee!=0){
-             var world = "Aimee";
+             var world = "xyh";
          }else{
              var world = "Qinlh";
          }

@@ -170,11 +170,11 @@ import {ShowBrowseCount,ShowArtCommentCount,showLikeData,GetLike} from '../utils
                         that.gotoTop = false;
                     }
                 }
-                if(t>1200){
-                    that.fixDo = true;
-                }else{
-                    that.fixDo = false;
-                }
+                // if(t>1200){
+                //     that.fixDo = true;
+                // }else{
+                //     that.fixDo = false;
+                // }
 
             }
             //查询浏览量最多的10篇文章数据

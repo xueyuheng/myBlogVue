@@ -106,6 +106,13 @@ export default new Router({
 				auth: true
 			},
 			name: 'LikeCollect'
-		} //用户个人中心
+		}, //用户个人中心
+		{
+			path: '/test',
+			component: resolve => require(['../pages/test.vue'],resolve),
+			meta: {
+				auth: true
+			}
+		}
 	]
 })
